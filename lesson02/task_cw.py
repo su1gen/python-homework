@@ -38,26 +38,22 @@ def task03_print_5_min_max(a, b, c, d, e):
     print(f'Максимальное число: {max_num}')
 
 
-def task04_compare_2_human(name1, name2):
+def compare_2_human(name1, name2):
     if name1 == name2:
-        print('Имена равны!')
+        return 'Имена равны!'
     else:
-        print('Имена не равны!')
+        return 'Имена не равны!'
 
 
-def task05_print_season(month_number):
+def print_season(month_number):
     if month_number == 12 or month_number == 1 or month_number == 2:
-        print('Зима')
+        return 'Зима'
     elif 2 < month_number < 6:
-        print('Весна')
+        return 'Весна'
     elif 5 < month_number < 9:
-        print('Лето')
+        return 'Лето'
     elif 8 < month_number < 12:
-        print('Осень')
+        return 'Осень'
     else:
-        print('Нет такого месяца!')
+        return 'Нет такого месяца!'
 
-
-task03_print_5_min_max(1, 5, 8, 3, 5)
-task04_compare_2_human('Юлия', 'Юлия')
-task05_print_season(2)
