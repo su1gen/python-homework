@@ -16,8 +16,8 @@ def get_data(filename='info.json'):
 def show_hobbies(data):
     if 'hobbies' in data:
         print(f'Hobbies amount: {len(data["hobbies"])}')
-        for hobbie in data["hobbies"]:
-            print(hobbie)
+        for hobby in data["hobbies"]:
+            print(hobby)
     else:
         print(f'No hobbies')
 
