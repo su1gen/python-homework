@@ -1,7 +1,6 @@
 import tkinter
 import tkinter.messagebox
 
-from lesson09HW.classes.connection_to_db import ConnectionToDB
 from lesson09HW.classes.planet import Planet
 from lesson09HW.controllers.galaxy_controller import GalaxyController
 from lesson09HW.controllers.planet_controller import PlanetController

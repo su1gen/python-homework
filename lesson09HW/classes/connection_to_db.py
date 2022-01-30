@@ -2,6 +2,7 @@ import sqlite3
 
 
 class ConnectionToDB:
+
     def __init__(self):
         self.__connection_to_db = sqlite3.connect('../../space.sqlite')
 

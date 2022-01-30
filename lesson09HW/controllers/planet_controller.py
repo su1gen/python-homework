@@ -8,6 +8,7 @@ class PlanetController:
         connection_to_db = ConnectionToDB()
         current_connection = connection_to_db.get_connection()
         cursor = current_connection.cursor()
+
         cursor.execute(f'INSERT INTO Planets (name, radius, core_temperature, has_atmosphere, has_life, galaxy_id) '
                        f'VALUES ("{planet.name}", "{planet.radius}", "{planet.core_temperature}", '
                        f'"{planet.has_atmosphere}", "{planet.has_life}", "{planet.galaxy_id}")')
